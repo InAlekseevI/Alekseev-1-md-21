@@ -1,0 +1,10 @@
+n = int(input('Введите кол-во слов: '))
+
+space = ''
+for a in range(n):
+    word = input('Введите слово: ')
+    if space:
+        space += ' ' + word
+    else:
+        space = word
+print ('Результат:', space)
