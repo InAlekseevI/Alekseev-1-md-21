@@ -1,0 +1,11 @@
+space = ''
+
+while True:
+    word = input('Введите слово или "stop": ')
+    if word == 'stop':
+        break
+    if space:
+        space += ' ' + word
+    else:
+        space = word
+print(space)
