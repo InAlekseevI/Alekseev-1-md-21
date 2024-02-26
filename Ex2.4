@@ -1,0 +1,20 @@
+import random
+true = 0
+miss = 0
+while miss < 3:
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    summ = num1 + num2
+    answer = input(f'{num1} + {num2} = ')
+    if not answer.isdigit():
+        print('Пожалуйста, используйте числа')
+        continue
+    answer = int(answer)
+    if answer == summ:
+        print('Првильно!')
+        true += 1
+    else:
+        print('Ответ неверный')
+        miss += 1
+
+print(f'Игра окончена. Правильных ответов {true}')
